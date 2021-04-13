@@ -13,4 +13,20 @@ This function causes the robot to turn left 90 degrees.  In the context of the p
 This function loops through the *straight* and *turn* functions 4 times, creating a square.
 <br/><br/>
 
-![Driving in a Square](./driving_in_a_square.gif)
+![Driving in a Square](./driving_in_a_square.gif)\
+
+## Wall Follower
+__High Level Description__<br/>
+
+__Code Explanation__<br/>
+
+## Person Follower
+__High Level Description__<br/>
+
+__Code Explanation__<br/>
+
+## Challenges
+
+## Future Work
+
+## Takeaways
