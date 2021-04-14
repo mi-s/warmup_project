@@ -21,14 +21,16 @@ My original objective was to make the robot recognize when it was approaching wa
 
 __Code Explanation__<br/>
 *scan_handler*<br/>
-This function reads the scan data provided by the robot.  It first calculates the distance of the closest wall within a 30 degree arc in front of the robot.  When faced with no walls, it drives the robot forward.  If the robot is approaching a wall but not close enough yet, it slows the robot down.  If the robot is within a certain distance of the wall, it stops and turns right in place until it is no longer facing the wall anymore.  This function is repeatedly run on the robot's scan data and is used to inform its direction and orientation.
+This function reads the scan data provided by the robot.  It first calculates the distance of the closest wall within a 30 degree arc in front of the robot.  When faced with no walls, it drives the robot forward.  If the robot is approaching a wall but not close enough yet, it slows the robot down.  If the robot is within a certain distance of the wall, it stops and turns right in place until it is no longer facing the wall anymore.  This function is repeatedly run on the robot's scan data to make the robot perform the behavior.
+
+![wall follower](./wall_follower.gif)\
 
 ## Person Follower
 __High Level Description__<br/>
 
 __Code Explanation__<br/>
 
-![wall follower](./wall_follower.gif)\
+![person follower](./person_follower.gif)\
 
 ## Challenges
 
