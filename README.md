@@ -27,8 +27,11 @@ This function reads the scan data provided by the robot.  It first calculates th
 
 ## Person Follower
 __High Level Description__<br/>
+The objective of this behavior is to make the robot follow the person.  My approach was to use the 360 degree LIDAR data given by the robot to identify the direction and distance to the person before instructing the robot to turn and move towards the person.  Once the person is within a certain distance, the robot will stop and use the LIDAR data to face the person until the person leaves the robot's distance.
 
 __Code Explanation__<br/>
+*scan_handler*<br/>
+This function reads the scan data provided by the robot to determine the robot's velocity.  It first finds the direction in which it is closest to the person.  Should the person be ahead of the robot, the robot will simply drive forward.  If the person is to the side of the robot but not behind it, the robot will turn towards the person while moving forward.  If the person is behind the robot, the robot will stop and turn in place to face the person.  Once the robot is within a certain distance of the person, it will only move to turn towards the person.
 
 ![person follower](./person_follower.gif)\
 
