@@ -36,7 +36,10 @@ This function reads the scan data provided by the robot to determine the robot's
 ![person follower](./person_follower.gif)\
 
 ## Challenges
+As the first project of this class, there were quite a few challenges I faced while working on this.  Friction and noise have a noticeable effect on the robot's behavior and can only be accounted for by programming thoughtfully.  Outside of the driving in a square function, which was simple enough to hard-code, the robot's sensors must be carefully used to counteract the effects of friction.  Outside of this, I did not have many huge challenges.  I did not fully implement the wall follower, but that was mostly due to a lack of time and sleep.
 
 ## Future Work
+If I had more time, I would complete the wall follower function.  It is a shame that it does not smoothly path alongside walls due to my crude implementation.  My plan was to have the robot identify when a wall is close within a 90 degree arc in front.  Then, the robot turns left or right away from the wall it is approaching.  Once the robot is parallel to the wall, it stops turning and proceeds to continue moving forward.  
 
-## Takeaways
+## Key Takeaways
+The first crucial point is to make sure you fully utilize the class resources on these assignments.  Office hours, peers, and in-class time are all great resources for helping you do a good job on projects, however they do require you to make an effort to use them.  Because I did not, I struggled to finish on time on an assignment that was very doable.  Beyond this, don't be intimidated by the idea of programming moving, physical entities.  This warmup project is a warmup for a reason - it shows how fundamentally simple it can be to program a robot.  Although robots in the real world can obviously be quite complex, this class and this project are an excellent starting point for understanding how to program them.
