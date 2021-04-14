@@ -25,7 +25,7 @@ __High Level Description__<br/>
 
 __Code Explanation__<br/>
 
-![Wall Follower](./Wall Follower.gif)\
+![wall follower](./wall_follower.gif)\
 
 ## Challenges
 
