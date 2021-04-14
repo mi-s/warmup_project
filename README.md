@@ -17,8 +17,11 @@ This function loops through the *straight* and *turn* functions 4 times, creatin
 
 ## Wall Follower
 __High Level Description__<br/>
+My original objective was to make the robot recognize when it was approaching walls before turning right until it is parallel with the wall.  However, due to difficulties I simplified my implementation.  My robot recognizes walls within a 30 degree arc ahead once they are within a certain distance.  Then, it turns right until the wall is no longer within that distance within the 30 degree arc.
 
 __Code Explanation__<br/>
+*scan_handler*<br/>
+This function reads the scan data provided by the robot.  It first calculates the distance of the closest wall within a 30 degree arc in front of the robot.  When faced with no walls, it drives the robot forward.  If the robot is approaching a wall but not close enough yet, it slows the robot down.  If the robot is within a certain distance of the wall, it stops and turns right in place until it is no longer facing the wall anymore.  This function is repeatedly run on the robot's scan data and is used to inform its direction and orientation.
 
 ## Person Follower
 __High Level Description__<br/>
