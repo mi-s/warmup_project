@@ -25,6 +25,8 @@ __High Level Description__<br/>
 
 __Code Explanation__<br/>
 
+![Wall Follower](./Wall Follower.gif)\
+
 ## Challenges
 
 ## Future Work
